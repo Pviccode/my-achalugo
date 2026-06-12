@@ -21,8 +21,8 @@ const DAYS = getDaysArray();  // 38 days
 const MUSIC_TRACKS = [
   { title: "All About You", artist: "Runtown", url: "/music/day1.mp3" },
   { title: "The Moment I Knew", artist: "Taylor Swift", url: "/music/day2.mp3" },
-  { title: "All of Me", artist: "John Legend", url: "/music/day3.mp3" },
-  { title: "Make You Feel My Love", artist: "Adele", url: "/music/day4.mp3" },
+  { title: "In My Head", artist: "Larry Gaaga", url: "/music/day3.mp3" },
+  { title: "Leave the Door Open", artist: "Bruno Mars", url: "/music/day4.mp3" },
   { title: "Can't Help Falling in Love", artist: "Elvis Presley", url: "/music/day5.mp3" },
   { title: "Lover", artist: "Taylor Swift", url: "/music/day6.mp3" },
   { title: "Just the Way You Are", artist: "Bruno Mars", url: "/music/day7.mp3" },
@@ -62,8 +62,8 @@ const MUSIC_TRACKS = [
 const REASONS = [
   { title: "All About You", message: "There are people you meet and then there are people who rearrange you. You are the second kind. From the moment you came into my life, something shifted — quietly, permanently. I find myself thinking about you in the middle of ordinary things. A song comes on and it's you. I see something beautiful and I want to show you. I laugh at something and I wish you were there. This app is my attempt to put into words what I feel every single day. Thirty-eight reasons, thirty-eight songs, thirty-eight days — all of it, every single bit, is all about you." },
   { title: "The Moment I knew", message: "There was a specific moment — not a grand gesture, not a dramatic scene — just a quiet, ordinary instant where I looked at you and something inside me went completely still. A kind of knowing that didn't need to be explained. It wasn't falling. It was more like arriving. Like some part of me recognised you before the rest of me had caught up. I've tried to pinpoint it since, to hold it in my hands and examine it, but it slips every time. What I do know is this — that moment changed the direction of everything. And I am so grateful it did." },
-  { title: "How deeply you care for others", message: "You feel everything — not just your own life, but the lives of people around you. That depth of empathy is rare and beautiful, and it's one of the things I treasure most about you." },
-  { title: "Your quiet strength", message: "You face hard things with a grace that leaves me in awe. You don't make a show of it. You just keep going, steady and sure, and somehow you make it look effortless." },
+  { title: "I Can't Get You Out of My Head", message: "I don't know when it happened exactly, but at some point you became the background of everything. I'd be in the middle of something completely unrelated — working, eating, trying to sleep — and there you'd be. Not intrusively. Just quietly present, like a song you didn't realise was playing until you catch yourself humming it. I tried to concentrate. I tried to be sensible about it. But the truth is, once you let someone like you into your mind, there is simply no going back. And somewhere along the way, I stopped trying." },
+  { title: "Your Presence is My Peace", message: "There is a kind of peace I only find with you. Not the absence of noise — something deeper than that. The feeling that everything is exactly where it should be. I notice it most in the quiet moments. When we're not doing anything in particular, just existing in the same space, and somehow that is enough. More than enough. You have this way of making the whole world feel less urgent, less sharp. Like I can finally put things down and just breathe. I didn't know I was looking for that until I found it in you. I didn't know calm could feel this much like joy." },
   { title: "The way you see beauty everywhere", message: "A sunset. A stray cat. A cup of tea gone cold. You notice the loveliness in things that most people walk right past. Being with you has taught me to see the world differently." },
   { title: "Your stubbornness (yes, really)", message: "When you believe in something, nothing moves you. Watching you hold your ground with grace and certainty is one of the most attractive things about you. Never change that." },
   { title: "The sound of your voice", message: "Whether you're whispering, laughing, or reading aloud, the sound of your voice is the most comforting thing I know. It's the one sound I'd choose above all others." },
