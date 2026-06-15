@@ -23,8 +23,8 @@ const MUSIC_TRACKS = [
   { title: "The Moment I Knew", artist: "Taylor Swift", url: "/music/day2.mp3" },
   { title: "In My Head", artist: "Larry Gaaga", url: "/music/day3.mp3" },
   { title: "Leave the Door Open", artist: "Bruno Mars", url: "/music/day4.mp3" },
-  { title: "Can't Help Falling in Love", artist: "Elvis Presley", url: "/music/day5.mp3" },
-  { title: "Lover", artist: "Taylor Swift", url: "/music/day6.mp3" },
+  { title: "Just the Way You Are", artist: "Bruno Mars", url: "/music/day5.mp3" },
+  { title: "Happy", artist: "Pharrell Williams", url: "/music/day6.mp3" },
   { title: "Just the Way You Are", artist: "Bruno Mars", url: "/music/day7.mp3" },
   { title: "Thinking Out Loud", artist: "Ed Sheeran", url: "/music/day8.mp3" },
   { title: "Endless Love", artist: "Diana Ross", url: "/music/day9.mp3" },
@@ -60,44 +60,120 @@ const MUSIC_TRACKS = [
 ];
 
 const REASONS = [
-  { title: "All About You", message: "There are people you meet and then there are people who rearrange you. You are the second kind. From the moment you came into my life, something shifted — quietly, permanently. I find myself thinking about you in the middle of ordinary things. A song comes on and it's you. I see something beautiful and I want to show you. I laugh at something and I wish you were there. This app is my attempt to put into words what I feel every single day. Thirty-eight reasons, thirty-eight songs, thirty-eight days — all of it, every single bit, is all about you." },
-  { title: "The Moment I knew", message: "There was a specific moment — not a grand gesture, not a dramatic scene — just a quiet, ordinary instant where I looked at you and something inside me went completely still. A kind of knowing that didn't need to be explained. It wasn't falling. It was more like arriving. Like some part of me recognised you before the rest of me had caught up. I've tried to pinpoint it since, to hold it in my hands and examine it, but it slips every time. What I do know is this — that moment changed the direction of everything. And I am so grateful it did." },
-  { title: "I Can't Get You Out of My Head", message: "I don't know when it happened exactly, but at some point you became the background of everything. I'd be in the middle of something completely unrelated — working, eating, trying to sleep — and there you'd be. Not intrusively. Just quietly present, like a song you didn't realise was playing until you catch yourself humming it. I tried to concentrate. I tried to be sensible about it. But the truth is, once you let someone like you into your mind, there is simply no going back. And somewhere along the way, I stopped trying." },
-  { title: "Your Presence is My Peace", message: "There is a kind of peace I only find with you. Not the absence of noise — something deeper than that. The feeling that everything is exactly where it should be. I notice it most in the quiet moments. When we're not doing anything in particular, just existing in the same space, and somehow that is enough. More than enough. You have this way of making the whole world feel less urgent, less sharp. Like I can finally put things down and just breathe. I didn't know I was looking for that until I found it in you. I didn't know calm could feel this much like joy." },
-  { title: "The way you see beauty everywhere", message: "A sunset. A stray cat. A cup of tea gone cold. You notice the loveliness in things that most people walk right past. Being with you has taught me to see the world differently." },
-  { title: "Your stubbornness (yes, really)", message: "When you believe in something, nothing moves you. Watching you hold your ground with grace and certainty is one of the most attractive things about you. Never change that." },
-  { title: "The sound of your voice", message: "Whether you're whispering, laughing, or reading aloud, the sound of your voice is the most comforting thing I know. It's the one sound I'd choose above all others." },
-  { title: "How you make everyone feel seen", message: "People leave a conversation with you feeling more themselves. You have a gift for giving your full attention — and that is one of the rarest and kindest things a person can do." },
-  { title: "Your incredible taste", message: "In music. In food. In the way you arrange a room or choose what to wear. Your eye for beauty and feeling is impeccable, and it makes every shared experience richer." },
-  { title: "The way you love what you love", message: "When something captures your heart — a song, a book, a meal — you don't just enjoy it. You sink into it fully. That wholehearted enthusiasm is one of the most alive things about you." },
-  { title: "Your mind", message: "The way you think — the connections you draw, the questions you ask, the things you notice — is extraordinary. Talking with you is never small. I learn something every single time." },
-  { title: "How you handle the hard days", message: "On the days when everything feels heavy, you still find a way through. You don't pretend it's fine when it isn't. And then you get up anyway. That courage moves me deeply." },
-  { title: "The way you remember the small things", message: "You remember how I take my coffee. You remember the names of people I mentioned once. You hold the details of the lives around you with such tenderness — it is a form of love all its own." },
-  { title: "Your honesty", message: "You say what you mean, kindly and clearly. In a world full of half-truths and politeness, your honesty is a gift. I always know where I stand with you, and that is everything." },
-  { title: "The way you move through the world", message: "There's something about the way you walk into a room, hold a glass, tuck your hair — an unconscious elegance that has nothing to do with trying. It's just you." },
-  { title: "Your willingness to be silly", message: "You can be fully, gloriously ridiculous — and you're not embarrassed by it at all. That ease with yourself, that playfulness, makes every ordinary moment a little more fun." },
-  { title: "How you love the people you love", message: "The loyalty, the ferocity, the tenderness you give to the people you care about — it's breathtaking. And I am the luckiest person alive to be one of them." },
-  { title: "Your curiosity", message: "You are never finished learning. There is always a new question, a new interest, a new rabbit hole you're joyfully disappearing into. Life with you is never, ever dull." },
-  { title: "The way you forgive", message: "You don't hold onto bitterness. When you let something go, you really let it go. That generosity of spirit — that choosing of peace — reflects a heart that is truly whole." },
-  { title: "How you smell", message: "There is a specific warmth to you — familiar and entirely yours — that I have never found anywhere else in the world. It is home. Completely and without question." },
-  { title: "The way you hold space for people", message: "When someone is hurting, you don't rush to fix it. You just stay. You let them feel what they feel. That presence — patient and real — is one of your greatest gifts." },
-  { title: "Your ambition", message: "You know what you want, and you build toward it quietly and steadily. No performance, no fanfare. Just purpose. I find that more admirable than anything." },
-  { title: "The look you give me", message: "There's a look — just yours — that makes me feel like the only person in any room. I don't know if you know you do it. But I notice it every single time." },
-  { title: "Your warmth", message: "People gravitate toward you without knowing why. You carry a warmth that is almost physical — it wraps around everyone near you. Being in your orbit is one of life's great privileges." },
-  { title: "The way you dream", message: "Your dreams are not small. They are vivid and real and fueled by genuine belief. Watching you imagine and plan and hope — it makes me believe in things I'd stopped believing in." },
-  { title: "How you've changed me", message: "I am more patient because of you. More present. More willing to slow down and notice. You have made me better — not by asking me to be, but simply by being who you are." },
-  { title: "Your laugh", message: "Not just any laugh — your real one. The one you can't control, the one that takes over your whole face. Hearing it is one of the greatest rewards this life has offered me." },
-  { title: "The life we're building", message: "Every shared moment, every inside joke, every message sent at 2am — it's all becoming something. Something entirely ours. I would not trade a single page of this story." },
-  { title: "How you inspire me", message: "Without trying to, you make me want to be more — more present, more kind, more alive. You are the quiet force behind some of the best things I've done." },
-  { title: "Your patience with me", message: "On the days I am difficult, distracted, or far away in my own head — you stay. That patience is not nothing. It is everything. And I do not take it lightly." },
-  { title: "The way you say my name", message: "There's a version of my name that only exists in your voice. Softer, warmer, more real than any other. I could listen to it for the rest of my life without tiring." },
-  { title: "Your courage", message: "You do hard things. You step into uncertain rooms, have uncomfortable conversations, and keep showing up even when it would be easier not to. That bravery is something I deeply admire." },
-  { title: "How present you are", message: "When you are with someone, you are really with them. No distraction, no half-attention. That full presence is a gift — and when you give it to me, I feel it completely." },
-  { title: "Your complexity", message: "You are not simple, and I am grateful for that. Every layer I discover makes me want to find the next. You are the most interesting person I have ever known." },
-  { title: "The distance between us right now", message: "Missing you is proof of something real. Every day apart is a day that has made me more certain — more sure of you, of us, of what July 19th means. The wait is worth it." },
-  { title: "Every message, every call", message: "Across every timezone and every screen, you have shown up. Consistently, warmly, wholly. That faithfulness across distance is one of the most romantic things I have ever experienced." },
-  { title: "The anticipation of seeing you", message: "I have imagined the moment so many times. The airport, the first sight of you, the first real breath I'll take in weeks. Tomorrow is almost here, and I can barely contain it." },
-  { title: "Everything — completely and without reservation", message: "After 38 days of reasons, it still comes down to this: you. All of you. The whole, wonderful, extraordinary person you are. Tomorrow I get to finally hold you. I have never been more ready for anything in my life. I love you." },
+  { 
+    title: "All About You", 
+    message: "There are people you meet and then there are people who rearrange you. You are the second kind. From the moment you came into my life, something shifted — quietly, permanently. I find myself thinking about you in the middle of ordinary things. A song comes on and it's you. I see something beautiful and I want to show you. I laugh at something and I wish you were there. This app is my attempt to put into words what I feel every single day. Thirty-eight reasons, thirty-eight songs, thirty-eight days — all of it, every single bit, is all about you." },
+  { 
+    title: "The Moment I knew", 
+    message: "There was a specific moment — not a grand gesture, not a dramatic scene — just a quiet, ordinary instant where I looked at you and something inside me went completely still. A kind of knowing that didn't need to be explained. It wasn't falling. It was more like arriving. Like some part of me recognised you before the rest of me had caught up. I've tried to pinpoint it since, to hold it in my hands and examine it, but it slips every time. What I do know is this — that moment changed the direction of everything. And I am so grateful it did." },
+  { 
+    title: "I Can't Get You Out of My Head", 
+    message: "I don't know when it happened exactly, but at some point you became the background of everything. I'd be in the middle of something completely unrelated — working, eating, trying to sleep — and there you'd be. Not intrusively. Just quietly present, like a song you didn't realise was playing until you catch yourself humming it. I tried to concentrate. I tried to be sensible about it. But the truth is, once you let someone like you into your mind, there is simply no going back. And somewhere along the way, I stopped trying." },
+  { 
+    title: "Your Presence is My Peace", 
+    message: "There is a kind of peace I only find with you. Not the absence of noise — something deeper than that. The feeling that everything is exactly where it should be. I notice it most in the quiet moments. When we're not doing anything in particular, just existing in the same space, and somehow that is enough. More than enough. You have this way of making the whole world feel less urgent, less sharp. Like I can finally put things down and just breathe. I didn't know I was looking for that until I found it in you. I didn't know calm could feel this much like joy." },
+  { 
+    title: "You are Radiant", 
+    message: "I want you to know something, and I want you to actually let it in — you are radiant. Not just in the way you look, though that alone is enough to make me forget what I was saying. I mean the kind of radiance that comes from somewhere deeper. The way your face changes when you talk about something you love. The way you carry yourself, unbothered and unhurried. The way you light up a room without ever trying to. There is something about you that draws people in, and I notice it every single time. I hope you see it too. I hope you look in the mirror and see even a fraction of what I see when I look at you." },
+  { 
+    title: "You Make Everything Fun", 
+    message: "Nobody makes ordinary things as fun as you do. A boring Sunday afternoon that somehow becomes the best part of the week. You have this energy that turns the mundane into something worth remembering — and I genuinely don't know how you do it. I've caught myself laughing with you at things that aren't even funny, staying up way too late because the conversation refuses to end, smiling at my phone like an absolute fool because of something you said. You make the small things big. You make the ordinary feel like a gift. And being around you — even in the most unremarkable moments — is one of my favourite places to be." },
+  { 
+    title: "The sound of your voice", 
+    message: "Whether you're whispering, laughing, or reading aloud, the sound of your voice is the most comforting thing I know. It's the one sound I'd choose above all others." },
+  { 
+    title: "How you make everyone feel seen", 
+    message: "People leave a conversation with you feeling more themselves. You have a gift for giving your full attention — and that is one of the rarest and kindest things a person can do." },
+  { 
+    title: "Your incredible taste", 
+    message: "In music. In food. In the way you arrange a room or choose what to wear. Your eye for beauty and feeling is impeccable, and it makes every shared experience richer." },
+  { 
+    title: "The way you love what you love", 
+    message: "When something captures your heart — a song, a book, a meal — you don't just enjoy it. You sink into it fully. That wholehearted enthusiasm is one of the most alive things about you." },
+  { 
+    title: "Your mind", 
+    message: "The way you think — the connections you draw, the questions you ask, the things you notice — is extraordinary. Talking with you is never small. I learn something every single time." },
+  { 
+    title: "How you handle the hard days", 
+    message: "On the days when everything feels heavy, you still find a way through. You don't pretend it's fine when it isn't. And then you get up anyway. That courage moves me deeply." },
+  { 
+    title: "The way you remember the small things", 
+    message: "You remember how I take my coffee. You remember the names of people I mentioned once. You hold the details of the lives around you with such tenderness — it is a form of love all its own." },
+  { 
+    title: "Your honesty", 
+    message: "You say what you mean, kindly and clearly. In a world full of half-truths and politeness, your honesty is a gift. I always know where I stand with you, and that is everything." },
+  { 
+    title: "The way you move through the world", 
+    message: "There's something about the way you walk into a room, hold a glass, tuck your hair — an unconscious elegance that has nothing to do with trying. It's just you." },
+  { 
+    title: "Your willingness to be silly", 
+    message: "You can be fully, gloriously ridiculous — and you're not embarrassed by it at all. That ease with yourself, that playfulness, makes every ordinary moment a little more fun." },
+  { 
+    title: "How you love the people you love", 
+    message: "The loyalty, the ferocity, the tenderness you give to the people you care about — it's breathtaking. And I am the luckiest person alive to be one of them." },
+  { 
+    title: "Your curiosity", 
+    message: "You are never finished learning. There is always a new question, a new interest, a new rabbit hole you're joyfully disappearing into. Life with you is never, ever dull." },
+  { 
+    title: "The way you forgive", 
+    message: "You don't hold onto bitterness. When you let something go, you really let it go. That generosity of spirit — that choosing of peace — reflects a heart that is truly whole." },
+  { 
+    title: "How you smell", 
+    message: "There is a specific warmth to you — familiar and entirely yours — that I have never found anywhere else in the world. It is home. Completely and without question." },
+  { 
+    title: "The way you hold space for people", 
+    message: "When someone is hurting, you don't rush to fix it. You just stay. You let them feel what they feel. That presence — patient and real — is one of your greatest gifts." },
+  { 
+    title: "Your ambition", 
+    message: "You know what you want, and you build toward it quietly and steadily. No performance, no fanfare. Just purpose. I find that more admirable than anything." },
+  { 
+    title: "The look you give me", 
+    message: "There's a look — just yours — that makes me feel like the only person in any room. I don't know if you know you do it. But I notice it every single time." },
+  { 
+    title: "Your warmth", 
+    message: "People gravitate toward you without knowing why. You carry a warmth that is almost physical — it wraps around everyone near you. Being in your orbit is one of life's great privileges." },
+  { 
+    title: "The way you dream", 
+    message: "Your dreams are not small. They are vivid and real and fueled by genuine belief. Watching you imagine and plan and hope — it makes me believe in things I'd stopped believing in." },
+  { 
+    title: "How you've changed me", 
+    message: "I am more patient because of you. More present. More willing to slow down and notice. You have made me better — not by asking me to be, but simply by being who you are." },
+  { 
+    title: "Your laugh", 
+    message: "Not just any laugh — your real one. The one you can't control, the one that takes over your whole face. Hearing it is one of the greatest rewards this life has offered me." },
+  { 
+    title: "The life we're building", 
+    message: "Every shared moment, every inside joke, every message sent at 2am — it's all becoming something. Something entirely ours. I would not trade a single page of this story." },
+  { 
+    title: "How you inspire me", 
+    message: "Without trying to, you make me want to be more — more present, more kind, more alive. You are the quiet force behind some of the best things I've done." },
+  { 
+    title: "Your patience with me", 
+    message: "On the days I am difficult, distracted, or far away in my own head — you stay. That patience is not nothing. It is everything. And I do not take it lightly." },
+  { 
+    title: "The way you say my name", 
+    message: "There's a version of my name that only exists in your voice. Softer, warmer, more real than any other. I could listen to it for the rest of my life without tiring." },
+  { 
+    title: "Your courage", 
+    message: "You do hard things. You step into uncertain rooms, have uncomfortable conversations, and keep showing up even when it would be easier not to. That bravery is something I deeply admire." },
+  { 
+    title: "How present you are", 
+    message: "When you are with someone, you are really with them. No distraction, no half-attention. That full presence is a gift — and when you give it to me, I feel it completely." },
+  { 
+    title: "Your complexity", 
+    message: "You are not simple, and I am grateful for that. Every layer I discover makes me want to find the next. You are the most interesting person I have ever known." },
+  { 
+    title: "The distance between us right now", 
+    message: "Missing you is proof of something real. Every day apart is a day that has made me more certain — more sure of you, of us, of what July 19th means. The wait is worth it." },
+  { 
+    title: "Every message, every call", 
+    message: "Across every timezone and every screen, you have shown up. Consistently, warmly, wholly. That faithfulness across distance is one of the most romantic things I have ever experienced." },
+  { 
+    title: "The anticipation of seeing you", 
+    message: "I have imagined the moment so many times. The airport, the first sight of you, the first real breath I'll take in weeks. Tomorrow is almost here, and I can barely contain it." },
+  { 
+    title: "Everything — completely and without reservation", 
+    message: "After 38 days of reasons, it still comes down to this: you. All of you. The whole, wonderful, extraordinary person you are. Tomorrow I get to finally hold you. I have never been more ready for anything in my life. I love you." },
 ];
 
 const PETALS = Array.from({ length: 18 }, (_, i) => ({
