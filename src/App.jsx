@@ -25,7 +25,7 @@ const MUSIC_TRACKS = [
   { title: "Leave the Door Open", artist: "Bruno Mars", url: "/music/day4.mp3" },
   { title: "Just the Way You Are", artist: "Bruno Mars", url: "/music/day5.mp3" },
   { title: "Happy", artist: "Pharrell Williams", url: "/music/day6.mp3" },
-  { title: "Just the Way You Are", artist: "Bruno Mars", url: "/music/day7.mp3" },
+  { title: "You are the Reason", artist: "Calum Scott", url: "/music/day7.mp3" },
   { title: "Thinking Out Loud", artist: "Ed Sheeran", url: "/music/day8.mp3" },
   { title: "Endless Love", artist: "Diana Ross", url: "/music/day9.mp3" },
   { title: "The Way You Look Tonight", artist: "Frank Sinatra", url: "/music/day10.mp3" },
@@ -79,11 +79,11 @@ const REASONS = [
     title: "You Make Everything Fun", 
     message: "Nobody makes ordinary things as fun as you do. A boring Sunday afternoon that somehow becomes the best part of the week. You have this energy that turns the mundane into something worth remembering — and I genuinely don't know how you do it. I've caught myself laughing with you at things that aren't even funny, staying up way too late because the conversation refuses to end, smiling at my phone like an absolute fool because of something you said. You make the small things big. You make the ordinary feel like a gift. And being around you — even in the most unremarkable moments — is one of my favourite places to be." },
   { 
-    title: "The sound of your voice", 
-    message: "Whether you're whispering, laughing, or reading aloud, the sound of your voice is the most comforting thing I know. It's the one sound I'd choose above all others." },
+    title: "The Way You Love", 
+    message: "I have never seen someone love the way you do. Fully, fiercely, without holding back. You care about me, and I feel it in everything — the way you love without keeping score. It is one of the most beautiful things I have ever witnessed. And I do not use that word lightly. To be loved by you is not something I take for granted. Not for a single day. It is a privilege I intend to honour for as long as you'll let me." },
   { 
-    title: "How you make everyone feel seen", 
-    message: "People leave a conversation with you feeling more themselves. You have a gift for giving your full attention — and that is one of the rarest and kindest things a person can do." },
+    title: "Growing Old With You", 
+    message: "I think about the future sometimes — not with anxiety, but with this quiet, warm certainty that I want you in it. I want to know what you'll be like in ten years, twenty years. What will still make you laugh. What new things you'll fall in love with. What version of yourself you'll grow into. I want to be there for all of it — the becoming, the changing, the settling into. I don't need a perfect future. I just need one with you in it. That alone makes it something worth looking forward to." },
   { 
     title: "Your incredible taste", 
     message: "In music. In food. In the way you arrange a room or choose what to wear. Your eye for beauty and feeling is impeccable, and it makes every shared experience richer." },
