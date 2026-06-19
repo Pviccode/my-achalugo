@@ -27,8 +27,8 @@ const MUSIC_TRACKS = [
   { title: "Happy", artist: "Pharrell Williams", url: "/music/day6.mp3" },
   { title: "You are the Reason", artist: "Calum Scott", url: "/music/day7.mp3" },
   { title: "Thinking Out Loud", artist: "Ed Sheeran", url: "/music/day8.mp3" },
-  { title: "Endless Love", artist: "Diana Ross", url: "/music/day9.mp3" },
-  { title: "The Way You Look Tonight", artist: "Frank Sinatra", url: "/music/day10.mp3" },
+  { title: "I Will Always Love You", artist: "Whitney Houston", url: "/music/day9.mp3" },
+  { title: "Adore You", artist: "Harry Styles", url: "/music/day10.mp3" },
   { title: "I Will Always Love You", artist: "Whitney Houston", url: "/music/day11.mp3" },
   { title: "At Last", artist: "Etta James", url: "/music/day12.mp3" },
   { title: "My Girl", artist: "The Temptations", url: "/music/day13.mp3" },
@@ -85,11 +85,11 @@ const REASONS = [
     title: "Growing Old With You", 
     message: "I think about the future sometimes — not with anxiety, but with this quiet, warm certainty that I want you in it. I want to know what you'll be like in ten years, twenty years. What will still make you laugh. What new things you'll fall in love with. What version of yourself you'll grow into. I want to be there for all of it — the becoming, the changing, the settling into. I don't need a perfect future. I just need one with you in it. That alone makes it something worth looking forward to." },
   { 
-    title: "Your incredible taste", 
-    message: "In music. In food. In the way you arrange a room or choose what to wear. Your eye for beauty and feeling is impeccable, and it makes every shared experience richer." },
+    title: "You Are My Safe Place", 
+    message: "Everyone needs somewhere they can put things down. A place where they don't have to perform or pretend or hold themselves together quite so tightly. You are that place for me. With you, I don't have to be anything other than exactly what I am — and somehow, inexplicably, that seems to be enough. You have never once made me feel like I needed to be more. That gift, quiet and consistent as it is, means more to me than I know how to say." },
   { 
-    title: "The way you love what you love", 
-    message: "When something captures your heart — a song, a book, a meal — you don't just enjoy it. You sink into it fully. That wholehearted enthusiasm is one of the most alive things about you." },
+    title: "How You Make Me Feel Seen", 
+    message: "There is a difference between being looked at and being seen. Most people look. You see. You notice the things I don't say out loud. You pick up on the shift in my voice, the hesitation in my words, the mood I'm trying to hide behind humour. And you don't make a fuss of it — you just quietly adjust, offer a little more warmth, stay a little closer. That attentiveness is one of the most intimate things a person can offer another. And you offer it so naturally, like it costs you nothing. It costs me everything not to be undone by it." },
   { 
     title: "Your mind", 
     message: "The way you think — the connections you draw, the questions you ask, the things you notice — is extraordinary. Talking with you is never small. I learn something every single time." },
