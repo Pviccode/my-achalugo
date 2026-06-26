@@ -34,7 +34,7 @@ const MUSIC_TRACKS = [
   { title: "Lucky", artist: "Sarkodie ft Rudeboy", url: "/music/day13.mp3" },
   { title: "From the Start", artist: "Laufey", url: "/music/day14.mp3" },
   { title: "A Thousand Years", artist: "Christina Perri", url: "/music/day15.mp3" },
-  { title: "Golden Hour", artist: "JVKE", url: "/music/day16.mp3" },
+  { title: "Little Things", artist: "Ella Mai", url: "/music/day16.mp3" },
   { title: "Dandelions", artist: "Ruth B.", url: "/music/day17.mp3" },
   { title: "Can't Help Falling in Love", artist: "Elvis Presley", url: "/music/day18.mp3" },
   { title: "Say You Won't Let Go", artist: "James Arthur", url: "/music/day19.mp3" },
