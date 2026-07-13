@@ -54,9 +54,9 @@ const MUSIC_TRACKS = [
   { title: "Better Together", artist: "Jack Johnson", url: "/music/day33.mp3" },
   { title: "Bless the Broken Road", artist: "Rascal Flatts", url: "/music/day34.mp3" },
   { title: "You Are the Reason", artist: "Calum Scott", url: "/music/day35.mp3" },
-  { title: "Speechless", artist: "Dan + Shay", url: "/music/day36.mp3" },
-  { title: "Almost There", artist: "Sleeping At Last", url: "/music/day37.mp3" },
-  { title: "Finally", artist: "Fergie", url: "/music/day38.mp3" },
+  { title: "Again", artist: "Wande Coal", url: "/music/day36.mp3" },
+  { title: "Running to you", artist: "Chike ft Simi", url: "/music/day37.mp3" },
+  { title: "Finally", artist: "Masterkraft ft Flavour & Sarkodie", url: "/music/day38.mp3" },
 ];
 
 const REASONS = [
